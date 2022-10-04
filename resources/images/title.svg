@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="270mm"
+   height="68mm"
+   viewBox="0 0 270 68.000001"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="Title.svg"
+   inkscape:export-filename="D:\Daten\JOBSEARCH\GITHUB\resources\images\Title.png"
+   inkscape:export-xdpi="30.00963"
+   inkscape:export-ydpi="30.00963"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.33569011"
+     inkscape:cx="1251.1539"
+     inkscape:cy="2.9789379"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     height="70mm"
+     width="193mm" />
+  <defs
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath92857">
+      <rect
+         style="mix-blend-mode:normal;fill:#1c2956;fill-opacity:1;stroke:none;stroke-width:0.40958;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect92859"
+         width="273.10559"
+         height="88.810738"
+         x="-273.10559"
+         y="0"
+         transform="scale(-1,1)" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0.81866346,8.4272356)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#0345bf;stroke-width:1.01121;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect1058"
+       width="241.40335"
+       height="2.9189508"
+       x="15.528332"
+       y="41.174911" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:39.591px;line-height:1.05;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.841701;stroke-miterlimit:4;stroke-dasharray:none"
+       x="12.522811"
+       y="38.729244"
+       id="text95681-6-6"
+       inkscape:export-filename="D:\Daten\JOBSEARCH\Joomla_Backup\WEBSITE\00_HOME\01_Maps_logo.png"
+       inkscape:export-xdpi="60"
+       inkscape:export-ydpi="60"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:39.591px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;fill-opacity:1;stroke:#0345bf;stroke-width:0.841701;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="12.522811"
+         y="38.729244"
+         id="tspan179606-7-7">POI-ROI-map</tspan></text>
+  </g>
+</svg>
