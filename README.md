@@ -97,7 +97,7 @@ Folder structure<br>
 
 Example<br>
 A typical view looks like this:<br>
-![alt text](./resources/images/screenshot.png)
+![alt text](./resources/images/POI-ROI-map.png)
 
 
 Authors<br>
