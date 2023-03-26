@@ -96,7 +96,7 @@ Life science - an American thing? The SARS-CoV-2 pandemic has shown that Europea
 
 ## <a id='example'></a> Example
 A typical view looks like this:<br>
-![alt text](./resources/images/POI-ROI-map.png)
+![POI-ROI-map_image](./resources/images/POI-ROI-map.png)
 
 
 ## <a id='authors'></a> Authors
