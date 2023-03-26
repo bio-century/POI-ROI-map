@@ -1,20 +1,23 @@
 # The POI-ROI-map project
 
+
 ## Introduction
 Life science - an American thing? The SARS-CoV-2 pandemic has shown that European research institutions & companies are very well capable of making their contribution to the global fight for health. However, it is very easy to loose overview about which interesting life science facilities exist in Europe. The original intention of this little ROI-map project was to simplify your job search by enabling you to mark individual regions and points of interest (ROIs & POIs). Nonetheless, the script can also be used for any other purpose! A simple .xlsx spreadsheet serves you as an easy-to-access "database" and let you define the respective coordinates. Available marker elements are ROIs, distance as well as POI markers. All elements can be color-coded, the POIs can be further specified by info-popups and are automatically clustered with respect to the current zoom setting. Moreover, multiple map representations are available. Have fun to play around.<br><br>
 
-## Table of Content
-- [Installation](#Installation)
-- [Folder structure](#Folderstructure)
-- [Getting Started](#GettingStarted)
-- [Example](#Example)
-- [Authors](#Authors)
-- [Contributors & Credits](#Contributors&Credits)
-- [License](#License)
-- [Acknowledgments & Sources](#Acknowledgments&Sources)
-- [Contact](#Contact)
 
-## <a name=Installation></a> Installation
+## Table of Content
+- [Installation](#installation)
+- [Folder structure](#folderstructure)
+- [Getting Started](#gettingstarted)
+- [Example](#example)
+- [Authors](#authors)
+- [Contributors & Credits](#contributorscredits)
+- [License](#license)
+- [Acknowledgments & Sources](#acknowledgmentssources)
+- [Contact](#contact)
+
+
+## <a id='installation'></a> Installation
 - Install Python on your local computer.
 - Install following required python packages:
     - folium
@@ -23,7 +26,8 @@ Life science - an American thing? The SARS-CoV-2 pandemic has shown that Europea
   Depending on your local setup use the pip- or the conda-commands. See requirements.txt for further specifications.
 - Install an IDE of your choice
 
-## <a name=Folderstructure></a> Folder structure
+
+## <a id='folderstructure'></a> Folder structure
 ```
 |   LICENSE.md
 |   POI-ROI-map.py                              <-- main script
@@ -52,7 +56,7 @@ Life science - an American thing? The SARS-CoV-2 pandemic has shown that Europea
         POI-ROI-map.html
 ```
 
-## <a name=GettingStarted></a> Getting Started
+## <a id='gettingstarted'></a> Getting Started
 - Download the repository
   - Follow these steps:
     - Open the database.xlsx-file with a spreadsheet file editor. MS Excel works best
@@ -89,23 +93,23 @@ Life science - an American thing? The SARS-CoV-2 pandemic has shown that Europea
     - The legend on the right enables you to select which clusters should be depicted as well as which visualization should be used for the map
 
 
-## <a name=Example></a> Example
+## <a id='example'></a> Example
 A typical view looks like this:<br>
 ![alt text](./resources/images/POI-ROI-map.png)
 
 
-## <a name=Authors></a> Authors
+## <a id='authors'></a> Authors
 bio-century.net admin
 
 
-## <a name=Contributors&Credits></a> Contributors & Credits
+## <a id='contributorscredits'></a> Contributors & Credits
 comber.io admin for inspirations, presentations of the website and code corrections.<br><br>
 
 
-## <a name=License></a> License
+## <a id='license'></a> License
 This project is published under the GNU General Public License v2.0 license. For terms and conditions see LICENSE.md<br><br>
 
-## <a name=Acknowledgments&Sources></a> Acknowledgments & Sources
+## <a id='acknowledgmentssources'></a> Acknowledgments & Sources
 - Technical sources:
   - <a href="https://inkscape.org/?switchlang=en/"> Inkscape </a>, under <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">GNU GPL 2</a>
   - <a href="http://python-visualization.github.io/folium/"> Folium </a>, under <a href="https://github.com/python-visualization/folium/blob/main/LICENSE.txt">MIT</a>
@@ -125,7 +129,7 @@ This project is published under the GNU General Public License v2.0 license. For
   - https://coolum001.github.io/foliummaps.html
 
 
-### <a name=Contact></a> Contact
+### <a id='contact'></a> Contact
 info@bio-century.net
 
 
