@@ -56,6 +56,7 @@ Life science - an American thing? The SARS-CoV-2 pandemic has shown that Europea
         POI-ROI-map.html
 ```
 
+
 ## <a id='gettingstarted'></a> Getting Started
 - Download the repository
   - Follow these steps:
@@ -108,6 +109,7 @@ comber.io admin for inspirations, presentations of the website and code correcti
 
 ## <a id='license'></a> License
 This project is published under the GNU General Public License v2.0 license. For terms and conditions see LICENSE.md<br><br>
+
 
 ## <a id='acknowledgmentssources'></a> Acknowledgments & Sources
 - Technical sources:
