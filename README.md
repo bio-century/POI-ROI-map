@@ -1,9 +1,19 @@
-README for the POI-ROI-map project<br><br>
+# README for the POI-ROI-map project<br><br>
 ROI Map<br>
 Life science - an American thing? The SARS-CoV-2 pandemic has shown that European research institutions & companies are very well capable of making their contribution to the global fight for health. However, it is very easy to loose overview about which interesting life science facilities exist in Europe. The original intention of this little ROI-map project was to simplify your job search by enabling you to mark individual regions and points of interest (ROIs & POIs). Nonetheless, the script can also be used for any other purpose! A simple .xlsx spreadsheet serves you as an easy-to-access "database" and let you define the respective coordinates. Available marker elements are ROIs, distance as well as POI markers. All elements can be color-coded, the POIs can be further specified by info-popups and are automatically clustered with respect to the current zoom setting. Moreover, multiple map representations are available. Have fun to play around.<br><br>
 
+## Table of Content
+- [Installation](#Installation)
+- [Folder structure](#Folderstructure)
+- [Getting Started](#GettingStarted)
+- [Example](#Example)
+- [Authors](#Authors)
+- [Contributors & Credits](#Contributors&Credits)
+- [License](#License)
+- [Acknowledgments & Sources](#Acknowledgments&Sources)
+- [Contact](#Contact)
 
-Installing<br>
+## <a name=Installation></a> Installation
 - Install Python on your local computer.
 - Install following required python packages:
     - folium
@@ -12,106 +22,89 @@ Installing<br>
   Depending on your local setup use the pip- or the conda-commands. See requirements.txt for further specifications.
 - Install an IDE of your choice
 
+## <a name=Folderstructure></a> Folder structure
+```
+|   LICENSE.md
+|   POI-ROI-map.py                              <-- main script
+|   README.md
+|   REQUIREMENTS.txt
+|
++---resources
+|   |   database.xlsx                           <-- database to define the positions of markers etc
+|   |
+|   +---data
+|   |       CNTR_BN_20M_2020_3035.geojson       <-- EuroGeographics dataset for depicting boundaries of European countries
+|   |
+|   \---images                                  <-- all images required for HTML-headline and the map (legend) incl. vector graphics
+|           blank.png
+|           blank.svg
+|           legend.png
+|           legend.svg
+|           logo.png
+|           logo.svg
+|           POI-ROI-map.png
+|           POI-ROI-map.svg
+|           title.png
+|           title.svg
+|
+\---target                                      <-- target file (HTML-map) to be shown in your internet browser
+        POI-ROI-map.html
+```
 
-Getting Started<br>
+## <a name=GettingStarted></a> Getting Started
 - Download the repository
-- Follow these steps:
-  - Open the data.xlsx-file with a spreadsheet file editor. MS Excel works best
-  - Adjust the data.xlsx-file with individual entries (optional). You can obtain the required coordinates (latitude and longitude) from google maps or from latlong.net for example
-  - For new data entries: drag all computed cells down to the new line. Fill out all other required cells of the new row. Optional cells can be left blank.
-    - icons
-      - required entries:
-        - latitude
-        - longitude
-        - status
-        - cluster
-      - optional entries:
-        - name
-        - info1
-        - info2
-        - info3
-        - city
-        - links
-        - address
-    - ROI areas
-      - required entries:
-        - latitude
-        - longitude
-        - radius
-        - color
-      - optional entries:
-        - name
-    - distance cycles
-      - required entries:
-        - radius
-        - color
-        - starting point
-      - optional entries:
-        - name
-  - Open IDE of your choice and let run the program
-  - Open the ROI_Map.html-file in your internet browser and take a look what you have created!
-  - The legend on the right enables you to select which clusters should be depicted as well as which visualization should be used for the map
+  - Follow these steps:
+    - Open the database.xlsx-file with a spreadsheet file editor. MS Excel works best
+    - Adjust the database.xlsx-file with individual entries (optional). The required coordinates (latitude and longitude) can be obtained from google maps, latlong.net .... 
+    For a new data entry expand the db-area of every worksheet by one line. Fill out all other required cells of the new row. Optional cells can be left blank.
+    ```
+      worksheet         input             necessity       
+      ---------------------------------------------- 
+      icons             name              optional        
+                        latitude          required        
+                        longitude         required        
+                        status            required        
+                        info1             optional        
+                        info2             optional        
+                        info3             optional        
+                        cluster           required        
+                        city              optional       
+                        links             optional       
+                        address           optional       
+      ROI_areas         city              optional       
+                        latitude          required       
+                        longitude         required       
+                        radius            required       
+                        color             required       
+      dist_cycles       cycle             optional       
+                        radius            required       
+                        color             required       
+      starting_point    city              optional       
+                        latitude          required       
+                        longitude         required       
+    ```
+    - Open IDE of your choice and let run the program
+    - Open the ROI_Map.html-file in your internet browser and take a look what you have created!
+    - The legend on the right enables you to select which clusters should be depicted as well as which visualization should be used for the map
 
 
-Folder structure<br>
- <table>
-   <tr>
-    <th>path</th>
-    <th>remark</th>
-  </tr>
-  <tr>
-    <td>LICENSE.md</th>
-    <td><--- main script</th>
-  </tr>
-  <tr>
-    <td>POI-ROI-map.py </td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>README.md</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>REQUIREMENTS.txt</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>./resources/database.xlsx</td>
-    <td><--- main database</td>
-  </tr>
-  <tr>
-    <td>./resources/images/</td>
-    <td><--- all images required for HTML-headline and the map (legend)</td>
-  </tr>
-  <tr>
-    <td>./resources/data/CNTR_BN_20M_2020_3035.geojson</td>
-    <td><--- EuroGeographics dataset for depicting boundaries of European countries</td>
-  </tr>
-  <tr>
-    <td>./resources/target/</td>
-    <td><--- target file (HTML-map) to be shown in your internet browser</td>
-  </tr>
-</table> 
-<br>
-<br><br>
-
-Example<br>
+## <a name=Example></a> Example
 A typical view looks like this:<br>
 ![alt text](./resources/images/POI-ROI-map.png)
 
 
-Authors<br>
-bio-century.net admin<br><br>
+## <a name=Authors></a> Authors
+bio-century.net admin
 
 
-Contributors & Credits<br>
+## <a name=Contributors&Credits></a> Contributors & Credits
 comber.io admin for inspirations, presentations of the website and code corrections.<br><br>
 
 
-License<br>
+## <a name=License></a> License
 This project is published under the GNU General Public License v2.0 license. For terms and conditions see LICENSE.md<br><br>
 
-Acknowledgments & Sources<br>
+## <a name=Acknowledgments&Sources></a> Acknowledgments & Sources
 - Technical sources:
   - <a href="https://inkscape.org/?switchlang=en/"> Inkscape </a>, under <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">GNU GPL 2</a>
   - <a href="http://python-visualization.github.io/folium/"> Folium </a>, under <a href="https://github.com/python-visualization/folium/blob/main/LICENSE.txt">MIT</a>
@@ -129,10 +122,9 @@ Acknowledgments & Sources<br>
   - https://code2care.org/pages/how-to-place-two-div-elements-next-to-each-other
   - https://geopandas.org/en/stable/gallery/polygon_plotting_with_folium.html
   - https://coolum001.github.io/foliummaps.html
-<br><br>
 
 
-Contact:<br>
+### <a name=Contact></a> Contact
 info@bio-century.net
 
 
