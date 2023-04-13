@@ -47,8 +47,8 @@ Life science - an American thing? The SARS-CoV-2 pandemic has shown that Europea
 
 ## <a id='folderstructure'></a> Folder structure
 ```
-|   LICENSE.md                                <--- main script
-|   POI-ROI-map.py
+|   LICENSE.md
+|   POI-ROI-map.py                            <--- main script
 |   README.md
 |   REQUIREMENTS.txt
 |
