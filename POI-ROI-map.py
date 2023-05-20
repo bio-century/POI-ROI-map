@@ -57,10 +57,10 @@ title_html = '''
         text-align: center;
     }
     </style></head>
-    <div id="wrapperDiv">
-        <div id="div1" style="padding:0px;background-color:#ffffff;float:left"><img class="one" src="./../resources/images/logo.png"></div>
-        <div id="div2" style="padding:0px;background-color:#ffffff;float:center"><img class="two" src="./../resources/images/title.png"></div>
-        <div id="div3" style="padding:0px;background-color:#ffffff;float:right"><img class="one" src="./../resources/images/blank.png"></div>
+    <div id="wrapperDiv" style="background-color:#000a34">
+        <div id="div1" style="padding:0px;background-color:#000a34;float:left"><img class="one" src="./../resources/images/BCN_logo.png"></div>
+        <div id="div2" style="padding:0px;background-color:#000a34;float:center"><img class="two" src="./../resources/images/title.png"></div>
+        <div id="div3" style="padding:0px;background-color:#000a34;float:right"></div>
     </div>
     <div style="padding:0px;background-color:#eff3fb;color:#0345bf;"><center>
     <font size="-3">copyrights: 
@@ -76,7 +76,8 @@ title_html = '''
      ''' 
 m.get_root().html.add_child(folium.Element(title_html))
 
-
+# < div id = "div2" style = "padding:0px;background-color:#000a34;float:center" > < img class ="two" src="./../resources/images/title.png" > < / div >
+# < div id = "div3" style = "padding:0px;background-color:#000a34;float:right" > < img class ="one" src="./../resources/images/blank.png" > < / div >
 
 ##########################################################################################
 ##  (01)                  Set Up And Add Map Features And Marker                        ##
@@ -144,7 +145,7 @@ color='red'
 # cluster icons with respect to location, category and zoom
 marker_cluster_cluster1 = MarkerCluster(name="cluster1")
 marker_cluster_cluster2 = MarkerCluster(name="cluster2")
-marker_cluster_individual_marker = MarkerCluster(name="individual markercluster")
+# marker_cluster_individual_marker = MarkerCluster(name="individual markercluster")
 
 ######################################################################################
 ##  (01.05)             Load And Add Icon Specifications To Popup Menu              ##
@@ -181,11 +182,11 @@ for i in range(0,len(data_icons)):
         pl.add_to(marker_cluster_cluster1)
     elif data_icons.iloc[i]['cluster']=='cluster2':
         pl.add_to(marker_cluster_cluster2)
-    else:
-        pl.add_to(marker_cluster_individual_marker)
+#    else:
+#        pl.add_to(marker_cluster_individual_marker)
 marker_cluster_cluster1.add_to(m)
 marker_cluster_cluster2.add_to(m)
-marker_cluster_individual_marker.add_to(m)
+#marker_cluster_individual_marker.add_to(m)
 
 ######################################################################################
 ##  (01.06)                        Add Layer Control To Map                         ##
